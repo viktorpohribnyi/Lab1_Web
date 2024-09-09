@@ -1,0 +1,133 @@
+/* Загальні стилі для додатка */
+.App {
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+h2 {
+  margin-top: 20px;
+  color: #ff4500;
+}
+
+h3 {
+  color: #0066cc;
+}
+
+p {
+  color: #444;
+  line-height: 1.6;
+  margin: 10px 0;
+}
+
+img {
+  border-radius: 10px;
+  max-width: 100%;
+  height: auto;
+  margin: 20px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Стилі для компонента AnimeScene */
+.anime-scenes {
+  padding: 20px;
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 15px;
+  margin: 20px auto;
+  max-width: 800px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.scene {
+  margin-bottom: 30px;
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.scene img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Стилі для компонента Header */
+.Header {
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+  margin-bottom: 20px;
+}
+
+.Header h1 {
+  margin: 0;
+  font-size: 2rem;
+  letter-spacing: 2px;
+}
+
+/* Стилі для компонента Footer */
+.Footer {
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+  margin-top: 20px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.Footer p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+/* Стилі для компонента InfoBox */
+.InfoBox {
+  background-color: #fff8dc;
+  padding: 15px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.InfoBox p {
+  font-style: italic;
+  color: #666;
+}
+
+/* Стилі для компонента AnimeCharacter */
+.anime-character {
+  background-color: #ffffff;
+  border-radius: 10px;
+  margin: 20px auto;
+  padding: 15px;
+  max-width: 500px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.anime-character h3 {
+  color: #ff4500;
+  margin-bottom: 10px;
+}
+
+.anime-character img {
+  float: left;
+  margin-right: 15px;
+  max-width: 100px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.anime-character p {
+  margin: 0;
+  color: #444;
+  line-height: 1.6;
+}
