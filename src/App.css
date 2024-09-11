@@ -1,38 +1,148 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'AnimeFont', sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: flex-start;
+  background-image: url('./images/naruto-background.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  padding-top: 55px;
+}
+
+.app-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  flex-grow: 1;
+}
+
+.header {
+  width: 100%;
+  background-color: #f2b632;
+  padding: 2px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-controls {
+  display: flex;
+  align-items: center;
+}
+
+.selected-items {
+  margin-right: 20px;
+  font-weight: bold;
+}
+
+.login-button {
+  padding: 10px 20px;
+  background-color: #ff6347;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login-button:hover {
+  background-color: #ff4500;
+}
+
+.menu {
+  width: 100%;
+  background-color: #333;
+  padding: 10px 0;
+  position: fixed;
+  top: 80px; 
+  left: 0;
+  z-index: 999; 
+}
+
+.menu-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.menu-list li {
+  margin: 0 15px;
+  color: #fff;
+  cursor: pointer;
+  transition: color 0.3s;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.menu-list li:hover {
+  color: #f2b632;
+}
+
+.item-list {
+  max-width: 1200px;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding-bottom: 60px;
+}
+
+.item {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.item:hover {
+  transform: scale(1.05);
+}
+
+.item-name {
+  font-size: 18px;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.item-price {
+  color: #888;
+  font-size: 16px;
+}
+
+.item-description {
+  font-size: 14px;
+  color: #555;
+  margin-top: 10px;
+}
+
+.footer {
+  width: 100%;
+  background-color: #f2b632;
+  padding: 2px;
+  text-align: center;
+  color: #1e1e1e;
+  font-size: 14px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
 }
