@@ -1,25 +1,29 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
+import ProductDetail from './components/ProductDetail';
+import CurrencyConverter from './components/CurrencyConverter';
 import './App.css';
 
-function App() {
+const App = () => {
+  const products = [
+    { id: 1, name: 'Phone', price: 5000 },
+    { id: 2, name: 'Laptop', price: 15000 },
+    { id: 3, name: 'Tablet', price: 7000 },
+  ];
+
+  const exchangeRate = 0.027; // курс на момент створення
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <h1>Product List</h1>
+      <ul>
+        {products.map(product => (
+          <li key={product.id}>
+            <ProductDetail product={product} exchangeRate={exchangeRate} />
+          </li>
+        ))}
+      </ul>
     </div>
   );
-}
+};
 
 export default App;
