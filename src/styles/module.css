@@ -1,0 +1,74 @@
+.animeButton {
+    background-color: #FF6B6B;
+    border: 2px solid #333;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    transition: all 0.3s ease;
+}
+
+.animeButton:hover {
+    background-color: #FF8787;
+    transform: scale(1.05);
+    box-shadow: 0px 0px 10px #FFC1C1;
+}
+
+.showDialogButton {
+    background-image: linear-gradient(to right, #fbc2eb, #a6c1ee);
+    font-weight: bold;
+}
+
+.addButton {
+    margin-top: 10px;
+    background-image: linear-gradient(to right, #f9d423, #ff4e50);
+    font-weight: bold;
+}
+
+.inputField {
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #333;
+    margin-right: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.dialogBox {
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 3px solid #333;
+    border-radius: 10px;
+    padding: 15px;
+    animation: animeFadeIn 0.5s ease-in-out;
+}
+
+.dialogTitle {
+    font-size: 1.5rem;
+    color: #FF6B6B;
+}
+
+.dialogText {
+    font-size: 1rem;
+    color: #333;
+}
+
+.item-enter {
+    opacity: 0;
+    transform: translateX(-100%);
+}
+
+.item-enter-active {
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 300ms ease-in;
+}
+
+.item-exit {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.item-exit-active {
+    opacity: 0;
+    transform: translateX(100%);
+    transition: all 300ms ease-in;
+}
